@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Great Vibes", serif;
+}
+
+.header {
+  flex-shrink: 0;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+.header {
+  background: #000428;
+  background: linear-gradient(to right, rgb(0, 78, 146), rgba(0, 4, 40, 0.5));
+  box-shadow: 0px 1px 15px 10px rgba(255, 255, 255, 0.5);
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+}
+.header_container {
+  max-width: 1078px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+.header_logo {
+  width: 50px;
+  height: 50px;
+}
+.header_logo img {
+  border-radius: 15px;
+}
+.header_text {
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main_container .new-year_container {
+  max-width: 1078px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main_container .new-year_container img.happyNewYearImg {
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 5px 5px 20px 5px rgba(255, 255, 255, 0.8), -5px -5px 20px 5px rgba(60, 214, 207, 0.8);
+  position: absolute;
+  border-radius: 20px;
+}
+@media (max-width: 468px) {
+  .main_container .new-year_container img.happyNewYearImg {
+    height: 300px;
+    width: auto;
+  }
+}
+.main_container .new-year_text {
+  margin-bottom: 15px;
+  color: white;
+  font-size: 32px;
+}
+.main_container .new-year_day {
+  position: relative;
+  font-size: 32px;
+  z-index: 10;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 20px;
+}
+.main_container .new-year_times {
+  margin-left: 15px;
+}
+
+.footer {
+  box-shadow: 0px 1px 15px 10px rgba(255, 255, 255, 0.5);
+  background: #000428;
+  background: linear-gradient(to right, #000428, #004e92);
+  padding: 10px 0;
+  color: white;
+}
+.footer_container {
+  max-width: 1078px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px 15px;
+  font-size: 20px;
+}
+@media (max-width: 468px) {
+  .footer_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.footer_year, .footer_developer, .footer_copyight {
+  font-family: "roboto", serif;
+}
+.footer_year span, .footer_developer span, .footer_copyight span {
+  margin-left: 10px;
+  font-family: "Great Vibes", serif;
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */
