@@ -49,7 +49,7 @@ function getTimesIfZeroDay(h,m,s, countD){
         happyNewYear.classList.add('happyNewYearImg');
         newYearWrapper.firstElementChild.style.display = 'none';
         dayTimes.style.display = 'none'
-        happyNewYear.src = '/img/photo-by-anastasiya-romanova-on-unsplash.jpg';
+        happyNewYear.src = './img/photo-by-anastasiya-romanova-on-unsplash.jpg';
         countDays.textContent = `C Новым ${newYear.getFullYear()+1} годом`;
         newYearWrapper.append(happyNewYear)
     } else {
